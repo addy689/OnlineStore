@@ -1,0 +1,217 @@
+/*
+	Author	:	Christopher Robinson
+	Email		:	christopher@edg3.co.uk
+	Website	:	http://www.edg3.co.uk/
+*/
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* general */
+
+a {
+	color:#777;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+/* body */
+
+body {
+	background:#fafafa;
+	color:#555;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+}
+
+/* header */
+#header {
+	border-bottom:1px solid #999;
+	height:80px;
+	margin:0 auto;
+	width:901px;
+}
+#header h1 {
+	color:#888;
+	font-size:300%;
+	letter-spacing:-3px;
+	text-align:right;
+	padding:5px;
+	margin-bottom:-20px;
+}
+#header h2 {
+	color:#CCC;
+	font-size:200%;
+	letter-spacing:-2px;
+	text-align:right;
+}
+
+/* navigation */
+#navigation {
+	background:#fafafa;
+	border-right:1px solid #999;
+	margin:0 auto;
+	width:900px;
+	height:40px;
+	list-style:none;
+}
+#navigation li {
+	border-left:1px solid #999;
+	float:left;
+	width:149px;
+	list-style:none;
+}
+#navigation a {
+	color:#555;
+	display:block;
+	line-height:40px;
+	text-align:center;
+}
+#navigation a:hover {
+	background:#e3e3e3;
+	color:#555;
+}
+#navigation .active {
+	background:#e3e3e3;
+	color:#777;
+}
+
+/* content */
+#content label {
+  	display: inline-block;
+  	width: 140px;
+  	font-weight: bold;
+}
+#content input{
+	border:0.5px solid #999;
+}
+
+#content {
+	height:auto;
+	margin:0 auto;
+	padding:0 0 20px;
+	width:901px;
+}
+
+#upd{
+	margin:0 auto;
+}
+#upd a{
+	color:#777;
+	text-decoration:underline;
+}
+#content h1 {
+	margin-bottom:10px;
+	border-bottom:1px dashed #999;
+	font-size:1.8em;
+	padding:20px 0 0;
+}
+#content p {
+	padding:20px 20px 0;
+}
+.submit {
+	margin-top:25px;
+	margin-left:264px;
+	margin-bottom:10px;
+}
+.submit1 {
+	margin-top:45px;
+	text-align:center;
+	margin-bottom:10px;
+}
+#reg {
+	text-align:center;
+	margin-right:160px;
+	margin-bottom:20px;
+}
+#reg a{
+	color:#777;
+	text-decoration:underline;
+}
+#reg a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+#desc {
+	border:0.5px solid #999;
+}
+
+#notify {
+	margin-top:25px;
+	margin-bottom:-40px;
+	text-align:center;
+	margin-right:370px;
+	float:right;
+	color:#4b8a08;
+}
+
+#psort {
+	margin:-72px 0px 30px 340px;
+}
+
+#psort select {
+	border: thin solid #999;
+}
+
+#sort {
+	margin:-45px 0px 30px 320px;
+}
+
+#sort select {
+	border: thin solid #999;
+}
+
+#leftsubmit {
+	margin-top:45px;
+	float:left;
+	margin-bottom:10px;
+}
+
+#rightsubmit {
+	margin-top:45px;
+	float:right;
+	margin-bottom:10px;
+}
+#loggd {
+	margin-bottom:100px;
+}
+
+/* footer */
+#footer {
+	border-top:1px solid #999; 
+	height:50px;
+	margin:10px auto;
+	padding:10px;
+	text-align:center;
+	width:901px;
+}
+#footer a{
+	color:#777;
+	text-decoration:underline;
+}
+#footer a:hover {
+	color:#333;
+	text-decoration:none;
+}
+	
+/* Added by Larry Ullman: */
+.errormsg {
+	   margin-top:2px;
+	   color:red;
+	   text-indent:160px;
+	   margin-bottom:-25px;
+}
+#errormsg_0_phone {
+	   color:red;
+	   text-indent:185px;
+	   margin-bottom:-25px;
+.error {
+	font-weight: bold;
+	color: red;
+}

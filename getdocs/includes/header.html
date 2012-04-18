@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title><?php echo $page_title; ?></title>
+ <link rel="stylesheet" href="<?php if(!isset($_SESSION['userid'])) echo 'includes/style.css'; else echo 'includes/style1.css';?>" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="header">
+		<h1>Online Store</h1>
+		<h2>NIT Calicut</h2>
+	</div>
+
+	<div id="navigation">
+		<ul>
+			<li><?php if(!isset($_SESSION['userid']))
+					echo '<a href="index.php">Home</a>';
+				else
+					echo '<a href="edituser.php">Edit Profile</a>';
+			?></li>
+			<!--<li><a href="register.php">Sign Up</a></li>-->
+			<li><a href="catalog.php">Product Catalog</a></li>
+			<?php if(isset($_SESSION['userid']))
+					echo '<li><a href="viewcart.php"><img src="includes/images/3.png" alt=""/> View Cart</a></li>';?>
+
+			<li><a href="contact.php">Contact Us</a></li>
+			<li><?php if(isset($_SESSION['userid']))
+					echo '<a href="orderhist.php">Order History</a>';
+				else
+					echo '<a href="register.php">Sign Up</a>';
+			?>
+			</li>
+			
+			<li><?php if((isset($_SESSION['userid'])) && (!strpos($_SERVER['PHP_SELF'],'logout.php')) )
+					echo '<a href="logout.php">Logout</a>';
+				else 
+					echo '<a href="login.php">Login</a>';
+			?>
+			</li>
+		</ul>
+	</div>
+
+	<!--Start of the page-specific content. -->
+	<div id="content">
